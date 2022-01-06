@@ -2,6 +2,13 @@
 
 set -e
 
+sudo apt -y install plasma-desktop \ 
+                    plasma-nm dolphin \
+                    dolphin-plugins \
+                    ark \
+                    konsole \
+                    sddm
+
 sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting \
                     python3-pip \
                     curl \
