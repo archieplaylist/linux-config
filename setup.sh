@@ -2,7 +2,7 @@
 
 set -e
 
-yay -Sy zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git
+yay -Sy curl konsave zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git
 
 cp ./.zshrc /home/mario
 

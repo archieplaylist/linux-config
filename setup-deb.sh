@@ -2,7 +2,9 @@
 
 set -e
 
-sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting
+sudo apt install zsh zsh-autosuggestions zsh-syntax-highlighting python3-pip curl
+
+python3 -m pip install konsave
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
