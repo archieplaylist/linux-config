@@ -2,7 +2,11 @@
 
 set -e
 
-yay -Sy curl konsave zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git
+yay -Sy exa \
+        curl \
+        konsave \
+        zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git \
+        thefuck
 
 cp ./.zshrc /home/mario
 
