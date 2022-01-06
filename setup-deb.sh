@@ -2,12 +2,16 @@
 
 set -e
 
+# Minimal desktop
 sudo apt -y install plasma-desktop \ 
                     plasma-nm dolphin \
                     dolphin-plugins \
                     ark \
                     konsole \
                     sddm
+
+# Apps
+sudo apt-get -y install firefox
 
 sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting \
                     python3-pip \
