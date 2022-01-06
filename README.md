@@ -1,7 +1,7 @@
 # linux-config
 
 ## Description
-    ### personal kde setup
+### personal kde setup
 
 **debian install**
  ```bash
