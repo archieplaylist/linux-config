@@ -1,8 +1,13 @@
-# linux-config
-
 ## Description
 ### personal kde setup
 
-**debian install**
- ```bash
+**Debian install**
+```bash
     git clone https://github.com/mariotani25/linux-config
+    ./setup-deb.sh
+``` 
+**Arch install**
+```bash
+    git clone https://github.com/mariotani25/linux-config
+    ./setup-arch.sh
+``` 
