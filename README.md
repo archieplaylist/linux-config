@@ -3,11 +3,14 @@
 
 **Debian install**
 ```bash
+    sudo apt update && sudo apt upgrade -y
+    sudo apt install -y git
     git clone https://github.com/mariotani25/linux-config
     ./setup-deb.sh
 ``` 
 **Arch install**
 ```bash
+    sudo pacman -Sy git
     git clone https://github.com/mariotani25/linux-config
     ./setup-arch.sh
 ``` 
