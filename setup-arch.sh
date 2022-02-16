@@ -13,7 +13,7 @@ yay -Sy exa \
         konsave \
         zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git \
         reflector \
-        thefuck
+        thefuck \
         yt-dlp
 
 cp ./.zshrc-arch /home/mario/.zshrc
