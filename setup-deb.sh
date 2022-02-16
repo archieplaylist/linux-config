@@ -19,7 +19,7 @@ sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting \
                     exa \
                     thefuck
 
-python3 -m pip install konsave
+python3 -m pip install -U konsave yt-dlp
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
