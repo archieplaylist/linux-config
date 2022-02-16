@@ -8,6 +8,7 @@ yay -Sy exa \
         zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git \
         reflector \
         thefuck
+        yt-dlp
 
 cp ./.zshrc-arch /home/mario/.zshrc
 
