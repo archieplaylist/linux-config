@@ -1,6 +1,12 @@
 #!/bin/bash
-
 set -e
+export SCRIPTHOME="$(basename -- $PWD)"
+
+git clone "https://aur.archlinux.org/yay.git"
+cd yay
+makepkg -si --noconfirm
+
+cd /home/mario/$SCRIPTHOME
 
 yay -Sy exa \
         curl \
