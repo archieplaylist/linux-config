@@ -14,9 +14,13 @@ yay -Sy exa \
         zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting grml-zsh-config oh-my-zsh-git \
         reflector \
         thefuck \
-        yt-dlp
+        yt-dlp \
+        doas
 
 cp ./.zshrc-arch /home/mario/.zshrc
+chsh -s /bin/zsh
+
+sudo cp doas.conf /etc/doas.conf
 
 konsave -i ./konsave.knsv
 konsave -a konsave
