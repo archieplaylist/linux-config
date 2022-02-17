@@ -9,7 +9,8 @@ sudo apt -y install plasma-desktop \
                     dolphin-plugins \
                     ark \
                     konsole \
-                    sddm
+                    sddm \
+                    latte-dock
 
 # Apps
 sudo apt-get -y install firefox
@@ -28,7 +29,9 @@ python3 -m pip install -U konsave yt-dlp
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
 chmod +x /home/.oh-my-zsh/oh-my-zsh.sh
-cp ./.zshrc-deb /home/mario/.zshrc
+cp conf/shellrc/.zshrc-deb /home/mario/.zshrc
 
 konsave -i ./konsave.knsv
 konsave -a konsave
+
+latte-dock --enable-autostart --default-layout laptop.layout.latte
