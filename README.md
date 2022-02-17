@@ -1,5 +1,5 @@
 ## Description
-### personal kde setup
+### My personal kde setup
 
 **Debian install**
 ```bash
