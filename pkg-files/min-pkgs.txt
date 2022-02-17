@@ -1,0 +1,14 @@
+exa 
+curl
+konsave
+zsh 
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
+grml-zsh-config
+oh-my-zsh-git
+reflector
+thefuck
+yt-dlp
+doas
+latte-dock
