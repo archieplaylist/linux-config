@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chmod +x /home/.oh-my-zsh/oh-my-zsh.sh
 cp conf/shellrc/.zshrc-deb /home/mario/.zshrc
 
-konsave -i ./konsave.knsv
+konsave -i conf/konsave/konsave.knsv
 konsave -a konsave
 
-latte-dock --enable-autostart --default-layout laptop.layout.latte
+latte-dock --enable-autostart --default-layout /home/mario/$SCRIPTHOME/conf/latte/laptop.layout.latte
