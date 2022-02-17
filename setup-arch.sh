@@ -15,7 +15,8 @@ yay -Sy exa \
         reflector \
         thefuck \
         yt-dlp \
-        doas
+        doas \
+        latte-dock
 
 cp ./.zshrc-arch /home/mario/.zshrc
 chsh -s /bin/zsh
@@ -24,4 +25,7 @@ sudo cp doas.conf /etc/doas.conf
 
 konsave -i ./konsave.knsv
 konsave -a konsave
+
+latte-dock --enable-autostart --default-layout laptop.layout.latte
+
 
