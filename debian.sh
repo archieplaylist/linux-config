@@ -35,3 +35,4 @@ konsave -i conf/konsave/laptop.knsv
 konsave -a laptop
 
 latte-dock --enable-autostart --default-layout /home/mario/$SCRIPTHOME/conf/latte/laptop.layout.latte
+echo "Done"
