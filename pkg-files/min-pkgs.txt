@@ -7,6 +7,9 @@ zsh-completions
 zsh-syntax-highlighting
 grml-zsh-config
 oh-my-zsh-git
+kvantum
+kvantum-theme-nordic-git
+sddm-nordic-theme-git
 reflector
 thefuck
 yt-dlp
