@@ -32,7 +32,13 @@ chmod +x /home/.oh-my-zsh/oh-my-zsh.sh
 cp conf/shellrc/.zshrc-deb /home/mario/.zshrc
 
 konsave -i conf/konsave/laptop.knsv
+sleep 1
 konsave -a laptop
+
+# sudo cat <<EOF > /etc/sddm.conf
+# [Theme]
+# Current=Nordic
+# EOF
 
 latte-dock --enable-autostart --default-layout /home/mario/$SCRIPTHOME/conf/latte/laptop.layout.latte
 echo "Done"
