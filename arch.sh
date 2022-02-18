@@ -28,7 +28,7 @@ chsh -s /bin/zsh
 sudo cp conf/doas/doas.conf /etc/doas.conf
 
 # Restore KDE Setup
-konsave -i conf/konsave/konsave.knsv
+konsave -i conf/konsave/laptop.knsv
 konsave -a konsave
 
 latte-dock --enable-autostart --default-layout /home/mario/$SCRIPTHOME/conf/latte/laptop.layout.latte
