@@ -2,3 +2,4 @@ firefox
 librewolf-bin
 discover
 pamac-nosnap
+easyeffetcts
