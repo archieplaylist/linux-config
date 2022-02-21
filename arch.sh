@@ -16,8 +16,8 @@ cp conf/shellrc/.zshrc-arch $HOME/.zshrc
 chsh -s /usr/bin/zsh
 
 # Setup .config
-cp conf/easyeffects $HOME/.config
-cp conf/Kvantum $HOME/.config
+cp -r conf/easyeffects $HOME/.config
+cp -r conf/Kvantum $HOME/.config
 
 ### cp doas.conf to /etc/doas.conf
 sudo cp conf/doas/doas.conf /etc/doas.conf
