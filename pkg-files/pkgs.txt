@@ -1,4 +1,4 @@
 firefox
-librewolf
+librewolf-bin
 discover
 pamac-nosnap
