@@ -1,3 +1,4 @@
 firefox
 librewolf
 discover
+pamac-nosnap
