@@ -6,7 +6,7 @@ export SCRIPTHOME="$(basename -- $PWD)"
 git clone "https://aur.archlinux.org/yay.git"
 cd yay
 makepkg -si --noconfirm
-cd /home/mario/$SCRIPTHOME
+cd $HOME/$SCRIPTHOME
 
 # Apps Install
 yay -Sy --needed - < pkg-files/min-pkgs.txt
@@ -14,6 +14,10 @@ yay -Sy --needed - < pkg-files/min-pkgs.txt
 # Shell Setup
 cp conf/shellrc/.zshrc-arch $HOME/.zshrc
 chsh -s /usr/bin/zsh
+
+# Setup .config
+cp conf/easyeffects $HOME/.config
+cp conf/Kvantum $HOME/.config
 
 sudo cp conf/doas/doas.conf /etc/doas.conf
 
