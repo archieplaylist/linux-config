@@ -40,8 +40,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chmod +x $HOME/.oh-my-zsh/oh-my-zsh.sh
 cp conf/shellrc/.zshrc-deb $HOME/.zshrc
 
-# Setup .config
-cp -r conf/easyeffects $HOME/.config
+### Setup .config
+# cp -r conf/easyeffects $HOME/.config
 cp -r conf/Kvantum $HOME/.config
 
 ### restore KDE setup
