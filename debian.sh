@@ -48,7 +48,7 @@ sleep 1
 python3 -m konsave -a laptop
 
 #### SDDM Nordic Theme
-tar -xf conf/nordic-kde/Nordic.tar.xz
+tar -xf conf/nordic-kde/Nordic-sddm.tar.xz
 sleep 1
 sudo cp -r Nordic /usr/share/sddm/themes/
 sudo ./conf/sddm.sh
@@ -66,7 +66,7 @@ sudo cp -r Nordic-Darker /usr/share/Kvantum/
 cp -r conf/Kvantum $HOME/.config/
 
 ### Setup backport
-sudo cp backport.list /etc/apt/sources.list.d/backport.list
+sudo cp conf/backport.list /etc/apt/sources.list.d/backport.list
 
 latte-dock --enable-autostart --default-layout $HOME/$SCRIPTHOME/conf/latte/laptop.layout.latte
 echo "Done"
