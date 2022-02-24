@@ -37,8 +37,10 @@ python3 -m pip install -U konsave yt-dlp
 ### Oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
+### conf zsh
 chmod +x $HOME/.oh-my-zsh/oh-my-zsh.sh
 cp conf/shellrc/.zshrc-deb $HOME/.zshrc
+chsh -s /usr/bin/zsh
 
 ### restore KDE setup
 python3 -m konsave -i conf/konsave/laptop.knsv
