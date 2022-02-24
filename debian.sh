@@ -47,15 +47,16 @@ python3 -m konsave -i conf/konsave/laptop.knsv
 sleep 1
 python3 -m konsave -a laptop
 
-#### Download Nordic Theme Debian
-tar -xf conf/Nordic.tar.xz
+#### SDDM Nordic Theme
+tar -xf conf/nordic-kde/Nordic.tar.xz
 sleep 1
 sudo cp -r Nordic /usr/share/sddm/themes/
 sudo ./conf/sddm.sh
 
-tar -xf conf/Nordic-kv.tar.xz
+### Kvantum Nordic theme
+tar -xf conf/nordic-kde/Nordic-kv.tar.xz
 sleep 1
-tar -xf conf/Nordic-Darker-kv.tar.xz
+tar -xf conf/nordic-kde/Nordic-Darker-kv.tar.xz
 sleep 1
 sudo cp -r Nordic /usr/share/Kvantum/
 sudo cp -r Nordic-Darker /usr/share/Kvantum/
