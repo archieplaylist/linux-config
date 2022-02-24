@@ -1,6 +1,8 @@
 #!/bin/bash
 set -i
 
+### sources : https://www.preining.info/blog/2022/02/kde-plasma-5-24-for-debian
+
 wget https://www.preining.info/obs-npreining.asc
 sudo cp obs-npreining.asc /etc/apt/trusted.gpg.d/obs-npreining.asc
 sleep 1
