@@ -40,20 +40,27 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 chmod +x $HOME/.oh-my-zsh/oh-my-zsh.sh
 cp conf/shellrc/.zshrc-deb $HOME/.zshrc
 
-### Setup .config
-# cp -r conf/easyeffects $HOME/.config
-cp -r conf/Kvantum $HOME/.config
-
 ### restore KDE setup
 python3 -m konsave -i conf/konsave/laptop.knsv
 sleep 1
 python3 -m konsave -a laptop
 
 #### Download Nordic Theme Debian
-tar -xf conf/Nordic.tar.xz.1
+tar -xf conf/Nordic.tar.xz
 sleep 1
 sudo cp -r Nordic /usr/share/sddm/themes/
 sudo ./conf/sddm.sh
+
+tar -xf conf/Nordic-kv.tar.xz
+sleep 1
+tar -xf conf/Nordic-Darker-kv.tar.xz
+sleep 1
+sudo cp -r Nordic /usr/share/Kvantum/
+sudo cp -r Nordic-Darker /usr/share/Kvantum/
+
+### Setup .config
+# cp -r conf/easyeffects $HOME/.config
+cp -r conf/Kvantum $HOME/.config/
 
 latte-dock --enable-autostart --default-layout $HOME/$SCRIPTHOME/conf/latte/laptop.layout.latte
 echo "Done"
