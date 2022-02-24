@@ -188,3 +188,7 @@ eval $(thefuck --alias)
 
 alias yt='yt-dlp -f "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"'
 
+### backports package install n update 
+alias backport='sudo apt install -t bullseye-backports'
+alias backportup='sudo apt -t bullseye-backports upgrade'
+
