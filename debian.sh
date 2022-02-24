@@ -25,11 +25,14 @@ sudo apt install -y zsh \
                     thefuck
 
 # Apps
-sudo apt-get -y install flatpak
+sudo apt-get -y install flatpak \
+                        plasma-discover-backend-flatpak \
+                        plasma-discover-backend-flatpak-dbgsym
 
 ### setup flatpak repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install -y  firefox
+flatpak install -y  librewolf \
+                    flatseal
                     # easyeffects
 
 python3 -m pip install -U konsave yt-dlp
