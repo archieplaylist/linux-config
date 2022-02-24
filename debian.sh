@@ -67,6 +67,8 @@ cp -r conf/Kvantum $HOME/.config/
 
 ### Setup backport
 sudo cp conf/backport.list /etc/apt/sources.list.d/backport.list
+sleep 1
+sudo apt update
 
 latte-dock --enable-autostart --default-layout $HOME/$SCRIPTHOME/conf/latte/laptop.layout.latte
 echo "Done"
