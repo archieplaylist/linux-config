@@ -26,8 +26,7 @@ sudo apt install -y zsh \
 
 # Apps
 sudo apt-get -y install flatpak \
-                        plasma-discover-backend-flatpak \
-                        plasma-discover-backend-flatpak-dbgsym
+                        plasma-discover-backend-flatpak
 
 ### setup flatpak repo
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
