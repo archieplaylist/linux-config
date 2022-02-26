@@ -1,5 +1,5 @@
 #!/bin/bash
-set -i
+set -e
 
 ### sources : https://www.preining.info/blog/2022/02/kde-plasma-5-24-for-debian
 
