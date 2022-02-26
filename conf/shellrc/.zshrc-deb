@@ -1,5 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 ZSH=~/.oh-my-zsh
@@ -129,7 +130,11 @@ ex ()
 }
 
 
-### ALIASES ### 
+### ALIASES ###
+
+# shutdown & reboot
+alias shutdown='sudo shutdown'
+alias reboot='sudo reboot'
 
 # root privileges
 alias doas="doas --"
@@ -142,7 +147,7 @@ alias .4='cd ../../../..'
 alias .5='cd ../../../../..'
 
 # Get Update Package
-alias update="sudo apt-get update && sudo apt-get upgrade -y"
+alias update="sudo apt-get update && sudo apt-get upgrade -y && sudo apt -t bullseye-backports upgrade"
 alias cleanup="sudo apt-get -y autoremove && sudo apt-get -y autoclean && sudo apt-get -y clean"
 
 # Changing "ls" to "exa"
@@ -172,7 +177,6 @@ alias free='free -m'                      # show sizes in MB
 if [ -f /etc/bash.command-not-found ]; then
     . /etc/bash.command-not-found
 fi
-
 
 ZSH_CACHE_DIR=$HOME/.cache/oh-my-zsh
 if [[ ! -d $ZSH_CACHE_DIR ]]; then
