@@ -4,15 +4,10 @@ set -e
 sudo apt update && sudo apt upgrade -y
 
 # Minimal desktop
-sudo apt -y install plasma-desktop \
-                    plasma-nm \
-                    dolphin \
-                    dolphin-plugins \
+sudo apt -y install dolphin-plugins \
                     ark \
-                    konsole \
-                    sddm \
                     latte-dock \
-                    xcb \ # for load layout latte-dock
+                    xcb \
                     qt5-style-kvantum \
                     qt5-style-kvantum-themes
 
@@ -26,6 +21,7 @@ sudo apt install -y zsh \
                     zsh-syntax-highlighting \
                     python3-pip \
                     curl \
+                    wget \
                     exa \
                     thefuck
 
@@ -49,6 +45,19 @@ chmod +x $HOME/.oh-my-zsh/oh-my-zsh.sh
 cp conf/shellrc/.zshrc-deb $HOME/.zshrc
 chsh -s /usr/bin/zsh
 
+### Setup backport
+sudo cp conf/backport.list /etc/apt/sources.list.d/backport.list
+sleep 1
+sudo apt update && sudo apt -t bullseye-backports upgrade
+
+### update latest plasma
+wget https://www.preining.info/obs-npreining.asc
+sudo cp obs-npreining.asc /etc/apt/trusted.gpg.d/obs-npreining.asc
+sleep 1
+sudo cp obs-npreining-kde.list /etc/apt/sources.list.d/obs-npreining-kde.list
+sudo apt update && sudo apt upgrade -y
+
+### KDE SETTING
 ### restore KDE setup
 python3 -m konsave -i conf/konsave/laptop.knsv
 sleep 1
@@ -71,11 +80,6 @@ sudo cp -r Nordic-Darker /usr/share/Kvantum/
 ### Setup .config
 # cp -r conf/easyeffects $HOME/.config
 cp -r conf/Kvantum $HOME/.config/
-
-### Setup backport
-sudo cp conf/backport.list /etc/apt/sources.list.d/backport.list
-sleep 1
-sudo apt update && sudo apt -t bullseye-backports upgrade
 
 latte-dock --enable-autostart --default-layout $HOME/$SCRIPTHOME/conf/latte/laptop.layout.latte
 echo "Done"
