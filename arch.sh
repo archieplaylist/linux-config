@@ -23,9 +23,9 @@ cp -r conf/Kvantum $HOME/.config
 sudo cp conf/doas/doas.conf /etc/doas.conf
 
 # Restore KDE Setup
-konsave -i conf/konsave/laptop.knsv
+konsave -i conf/konsave/kde.knsv
 sleep 1
-konsave -a laptop
+konsave -a kde
 
 # Sddm Theme
 sudo ./conf/sddm.sh

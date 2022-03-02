@@ -59,9 +59,9 @@ sudo apt update && sudo apt upgrade -y
 
 ### KDE SETTING
 ### restore KDE setup
-python3 -m konsave -i conf/konsave/laptop.knsv
+python3 -m konsave -i conf/konsave/kde.knsv
 sleep 1
-python3 -m konsave -a laptop
+python3 -m konsave -a kde
 
 #### SDDM Nordic Theme
 tar -xf conf/nordic-kde/Nordic-sddm.tar.xz
